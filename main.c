@@ -3,16 +3,19 @@
 
 int main(int argc, char *argv[])
 {
-    int a ;
+    char c;
+    int num = 0 ;
     
-    printf("정수를 입력하시오 : ");
-    scanf("%d", &a);
+    printf("input a string : ");
     
-    if(a<0) {
-         a = a * -1;
-    }
-         
-    printf("절대값은 %d 입니다.", a);
+    while ((c = getchar()) != '\n') {
+          if (c >= '0' && c <= '9' ) {
+                num += 1 ;
+          }
+}
+
+printf("The number of digits is %d", num);
+
     
   system("PAUSE");	
   return 0;
